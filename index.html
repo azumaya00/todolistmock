@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/83de085ebe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>練習用TODOリストモック</title>
+  </head>
+  <body>
+    <main class="l-main">
+      <h1 class="p-title__title">TODO LIST</h1>
+      <p class="p-title__subtitle">with JS</p>
+
+      <!-- 検索窓 -->
+      <div class="p-search__container">
+        <i class="fas fa-search p-search__icon"></i>
+        <input
+          type="text"
+          class="p-search__input"
+          value=""
+          placeholder="Search"
+        />
+      </div>
+
+      <!-- タスク追加 -->
+      <div class="p-add__container">
+        <form action="" class="p-add__form">
+          <input
+            type="text"
+            class="p-add__input"
+            value=""
+            placeholder="New Task Here"
+          />
+          <div class="p-add__button__container">
+            <button class="c-btn c-btn--small c-btn--main p-add__button">
+              ADD TODO
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- タスクリスト -->
+      <ul class="p-list">
+        <li class="p-list__item" data-text="未完了のタスクその1">
+          <div class="p-list__item__inner">
+            <input type="checkbox" class="p-list__item__checkbox" />
+            <span class="p-list__item__text">未完了のタスクその1</span>
+            <input
+              type="text"
+              class="p-list__item__input"
+              value="未完了のタスクその1"
+            />
+          </div>
+          <i class="far fa-trash-alt p-list__item__icon"></i>
+        </li>
+        <li class="p-list__item" data-text="未完了のタスクその2">
+          <div class="p-list__item__inner">
+            <input type="checkbox" class="p-list__item__checkbox" />
+            <span class="p-list__item__text">未完了のタスクその2</span>
+            <input
+              type="text"
+              class="p-list__item__input"
+              value="未完了のタスクその2"
+            />
+          </div>
+          <i class="far fa-trash-alt p-list__item__icon"></i>
+        </li>
+        <li class="p-list__item p-list__item--done" data-text="完了済みタスク">
+          <div class="p-list__item__inner">
+            <input type="checkbox" class="p-list__item__checkbox" checked />
+            <span class="p-list__item__text checked">完了済みタスク</span>
+            <input
+              type="text"
+              class="p-list__item__input"
+              value="完了済みタスク"
+            />
+          </div>
+          <i class="far fa-trash-alt p-list__item__icon"></i>
+        </li>
+      </ul>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
